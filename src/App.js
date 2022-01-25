@@ -45,144 +45,295 @@ function App() {
   const city20 = 'Grand Rapids'
   const state20 = 'MI'
 
+  function displayWeather(data) {
+    // City Name, Pressure, Humidity, Temperature
+    const bodyEl = document.querySelector('body')
+
+    bodyEl.innerHTML += `<h2>${data.cityName}</h2>`
+    bodyEl.innerHTML += `<p>${data.pressure}</p>`
+    bodyEl.innerHTML += `<p>${data.humidity}</p>`
+    bodyEl.innerHTML += `<p>${data.temperature}</p>`
+    bodyEl.innerHTML += `<hr>`
+  }
+
   // location 1
   fetch(`https://${apiBaseUrl}?q=${city1}&${state1}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 2
   fetch(`https://${apiBaseUrl}?q=${city2}&${state2}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 3
   fetch(`https://${apiBaseUrl}?q=${city3}&${state3}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 4
   fetch(`https://${apiBaseUrl}?q=${city4}&${state4}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 5
   fetch(`https://${apiBaseUrl}?q=${city5}&${state5}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 6
   fetch(`https://${apiBaseUrl}?q=${city6}&${state6}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 7
   fetch(`https://${apiBaseUrl}?q=${city7}&${state7}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 8
   fetch(`https://${apiBaseUrl}?q=${city8}&${state8}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 9
   fetch(`https://${apiBaseUrl}?q=${city9}&${state9}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 10
   fetch(`https://${apiBaseUrl}?q=${city10}&${state10}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 11
   fetch(`https://${apiBaseUrl}?q=${city11}&${state11}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 12
   fetch(`https://${apiBaseUrl}?q=${city12}&${state12}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 13
   fetch(`https://${apiBaseUrl}?q=${city13}&${state13}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 14
   fetch(`https://${apiBaseUrl}?q=${city14}&${state14}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 15
   fetch(`https://${apiBaseUrl}?q=${city15}&${state15}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 16
   fetch(`https://${apiBaseUrl}?q=${city16}&${state16}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 17
   fetch(`https://${apiBaseUrl}?q=${city17}&${state17}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 18
   fetch(`https://${apiBaseUrl}?q=${city18}&${state18}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 19
   fetch(`https://${apiBaseUrl}?q=${city19}&${state19}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   // location 20
   fetch(`https://${apiBaseUrl}?q=${city20}&${state20}&units=${tempUnits}&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      const weatherData = {
+        cityName: data.name,
+        pressure: data.main.pressure,
+        humidity: data.main.humidity,
+        temperature: data.main.temp
+      }
+
+      displayWeather(weatherData)
     })
 
   return (
