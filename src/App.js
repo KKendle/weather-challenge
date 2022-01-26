@@ -17,16 +17,16 @@ function App() {
         data={data} />
     )
   })
-
   const rows: GridRowsProp = [
-    { id: 1, col1: 'Hello', col2: 'World' },
-    { id: 2, col1: 'DataGridPro', col2: 'is Awesome' },
-    { id: 3, col1: 'MUI', col2: 'is Amazing' },
+    { id: 1, col1: 'Hello', col2: 'World', col3: '3', col4: '4' },
+    { id: 2, col1: 'DataGridPro', col2: 'is Awesome', col3: '3', col4: '4' },
+    { id: 3, col1: 'MUI', col2: 'is Amazing', col3: '3', col4: '4' },
   ];
-
   const columns: GridColDef[] = [
-    { field: 'col1', headerName: 'Column 1', width: 150 },
-    { field: 'col2', headerName: 'Column 2', width: 150 },
+    { field: 'col1', headerName: 'City Name', width: 150 },
+    { field: 'col2', headerName: 'Pressure', width: 150 },
+    { field: 'col3', headerName: 'Humidity', width: 150 },
+    { field: 'col4', headerName: 'Temperature', width: 150 },
   ];
 
   return (
