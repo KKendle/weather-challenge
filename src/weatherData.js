@@ -3,161 +3,101 @@ const weatherData = [
     id: 1,
     city: 'Saint Louis',
     state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
   },
   {
     id: 2,
-    city: 'Saint Louis',
+    city: 'Eldon',
     state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
   },
   {
     id: 3,
-    city: 'Saint Louis',
-    state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
+    city: 'Harbor Springs',
+    state: 'MI',
   },
   {
     id: 4,
-    city: 'Saint Louis',
-    state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
+    city: 'Gatlinburg',
+    state: 'TN',
   },
   {
     id: 5,
-    city: 'Saint Louis',
-    state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
+    city: 'New York',
+    state: 'NY',
   },
   {
     id: 6,
-    city: 'Saint Louis',
+    city: 'Chesterfield',
     state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
   },
   {
     id: 7,
-    city: 'Saint Louis',
-    state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
+    city: 'Chicago',
+    state: 'IL',
   },
   {
     id: 8,
-    city: 'Saint Louis',
+    city: 'Springfield',
     state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
   },
   {
     id: 9,
-    city: 'Saint Louis',
-    state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
+    city: 'Springfield',
+    state: 'IL',
   },
   {
     id: 10,
-    city: 'Saint Louis',
-    state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
+    city: 'Phoenix',
+    state: 'AZ',
   },
   {
     id: 11,
-    city: 'Saint Louis',
-    state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
+    city: 'Seattle',
+    state: 'WA',
   },
   {
     id: 12,
-    city: 'Saint Louis',
-    state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
+    city: 'Dayton',
+    state: 'OH',
   },
   {
     id: 13,
-    city: 'Saint Louis',
-    state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
+    city: 'Colorado',
+    state: 'CO',
   },
   {
     id: 14,
-    city: 'Saint Louis',
-    state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
+    city: 'Milwaukee',
+    state: 'WI',
   },
   {
     id: 15,
-    city: 'Saint Louis',
-    state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
+    city: 'Atterberry',
+    state: 'IL',
   },
   {
     id: 16,
-    city: 'Saint Louis',
+    city: 'Maryland Heights',
     state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
   },
   {
     id: 17,
-    city: 'Saint Louis',
+    city: 'Columbia',
     state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
   },
   {
     id: 18,
-    city: 'Saint Louis',
+    city: 'Kansas City',
     state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
   },
   {
     id: 19,
     city: 'Saint Louis',
     state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
   },
   {
     id: 20,
-    city: 'Saint Louis',
-    state: 'MO',
-    pressure: '15',
-    humidity: '50',
-    temperature: '23'
+    city: 'Grand Rapids',
+    state: 'MI',
   },
 ]
 
