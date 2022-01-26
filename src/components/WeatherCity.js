@@ -1,25 +1,20 @@
 import React from 'react'
+import { DataGrid, GridRowsProp, GridColDef } from '@mui/x-data-grid';
 
 function WeatherCity(props) {
-  // City Name, Pressure, Humidity, Temperature
-  let [cityPressure, setCityPressure] = React.useState(null)
-  let [cityHumidity, setCityHumidity] = React.useState(null)
-  let [cityTemperature, setCityTemperature] = React.useState(null)
-
-  fetch(`https://${props.apiBaseUrl}?q=${props.data.city}&${props.data.state}&units=${props.tempUnits}&appid=${props.apiKey}`)
-    .then(response => response.json())
-    .then(data => {
-      setCityPressure(data.main.pressure)
-      setCityHumidity(data.main.humidity)
-      setCityTemperature(data.main.temp)
-    })
+  const rows: GridRowsProp = props.weatherData
+  const columns: GridColDef[] = [
+    { field: 'col1', headerName: 'City Name', width: 150 },
+    { field: 'col2', headerName: 'Pressure', width: 150 },
+    { field: 'col3', headerName: 'Humidity', width: 150 },
+    { field: 'col4', headerName: 'Temperature', width: 150 },
+  ]
 
   return (
     <article className="weather-city">
-      <h2 className="weather-city__city-name">{props.data.city}</h2>
-      <p className="weather-city__pressure">{cityPressure}</p>
-      <p className="weather-city__humidity">{cityHumidity}</p>
-      <p className="weather-city__temperature">{cityTemperature}</p>
+      <div style={{ height: 300, width: '100%' }}>
+        <DataGrid rows={rows} columns={columns} />
+      </div>
     </article>
   )
 }
